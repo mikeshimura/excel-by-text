@@ -36,6 +36,7 @@ Generated Excel Sample
 ##Execution  
 excel-by-text(.exe) -e encoding inputfile
 
+-e is optional  
 encoding default is UTF8. Accept ShiftJIS, EUCJP.
 
 ##Download  
