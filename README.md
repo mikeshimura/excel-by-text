@@ -5,7 +5,7 @@ Create complex excel from text file. This program is executable for windows, mac
 
 This program use github.com/tealeg/xlsx for excel generation.
 
-##First part of following Simple report is as follows.  
+## First part of following Simple report is as follows.  
 Columns must be separated by tab(\t).
 
 ```go
@@ -33,13 +33,13 @@ Generated Excel Sample
 [text](https://bytebucket.org/mikeshimura/goreport/wiki/excel-by-text/simple1.txt)
 [excel](https://bytebucket.org/mikeshimura/goreport/wiki/excel-by-text/simple1.xlsx)
 
-##Execution  
+## Execution  
 excel-by-text(.exe) -e encoding inputfile
 
 -e is optional  
 encoding default is UTF8. Accept ShiftJIS, EUCJP.
 
-##Download  
+## Download  
 [windows 386](https://bytebucket.org/mikeshimura/goreport/wiki/excel-by-text/excel-by-text_windows_386.exe)  
 [windows amd64](https://bytebucket.org/mikeshimura/goreport/wiki/excel-by-text/excel-by-text_windows_amd64.exe)  
 [mac 386](https://bytebucket.org/mikeshimura/goreport/wiki/excel-by-text/excel-by-text_darwin_386)  
@@ -47,7 +47,7 @@ encoding default is UTF8. Accept ShiftJIS, EUCJP.
 [linux 386](https://bytebucket.org/mikeshimura/goreport/wiki/excel-by-text/excel-by-text_linux_386)  
 [linux amd64](https://bytebucket.org/mikeshimura/goreport/wiki/excel-by-text/excel-by-text_linux_amd64)  
 
-##Commands  
+## Commands  
 Elements must be separated by tab(\t).
 
 - File Open/Save  
