@@ -57,6 +57,107 @@ Elements must be separated by tab(\t).
  - Generated Excel Save  
  W {filename}
 
+- Sheet
+ - Add Sheet  
+ STA {sheetName}  
+ - Set Sheet  
+ STS {sheetName}  
+
+ Border pattern and Fill pattern Sample
+ ![Sample](https://bytebucket.org/mikeshimura/goreport/wiki/image/parameter2.jpg "Sample")
+
+ [excel](https://bytebucket.org/mikeshimura/goreport/wiki/excel/parameter2.xlsx)  
+
+Color  
+
+- Blue, Yellow etc.  
+
+- FF0000(Red) type RGB expression can be used.  
+
+- Blue:50 Density can be used.
+
+- [defined color text file](https://bytebucket.org/mikeshimura/goreport/wiki/excel/color.txt)
+ Color Dictionary (May be registerd)  [www.colordic.org](http://www.colordic.org/)
+
 - Style  
  - Create New Style     
- SN {stylename} {font} {size} {border} {borderPattern}
+ SN {stylename} {font} {size} {border} {borderPattern}  
+ // border "T" top  "B" bottom  "L" left  "R" right  
+ //border and borderPattern are optional  
+
+ - Copy Style  
+ CS {FromStyleName} {ToStyleName}  
+
+ - Set Font Name  
+ SFN {stylename} {fontName}  
+
+ - Set Font Size    
+ SFS {stylename} {fontSize}  
+
+ - Set Font Color    
+ SFS {stylename} {color}  
+
+ - Set Italic    
+ SI {stylename} {bool}  
+ //bool T (True) or F (False)  
+
+ - Set Bold     
+ SBL {stylename} {bool}  
+
+ - Set Underline   
+ SU {stylename} {bool}  
+
+ - Set Border    
+ SB {stylename} {border} {borderPattern}  
+ // border "T" top  "B" bottom  "L" left  "R" right  
+
+ - Set Fill   
+ SF {stylename} {pattern} {fgColor} {bgColor}  
+
+ - Set Horizontal Align   
+ SH {alignment}  
+ //Left, Center, Right, Justify, Distributed, CenterContinuous, Fill, General  
+
+ - Set Vertical Align   
+ SV {alignment}  
+ //Top, Center, Bottom, Justify, Distributed  
+
+- Cell Value and Format  
+
+ - Set Column Width  
+ CW {startCol} {endCol} {width}  
+
+ - Merge  
+ M {rowno} {colno} {toRowno} {toColno}  
+
+ - Set Format  
+ FS {rowno} {colno} {format}  
+
+ - Set String  
+ S {rowno} {colno} {content}  
+
+ - Set Number
+ N {rowno} {colno} {value}  
+
+ - Set Number Format  
+ NF {rowno} {colno} {value} {format}  
+
+ - Set Date
+ D {rowno} {colno} {value}  
+ // date value format yyyy/mm/dd
+
+ - Set Date Format  
+ DF {rowno} {colno} {value} {format}
+
+ - Set DateTime
+ DT {rowno} {colno} {value}  
+ // datetime value format yyyy/mm/dd hh:mm:ss  
+
+ - Set DateTime Format  
+ DTF {rowno} {colno} {value} {format}
+
+ - Set Formula
+ F {rowno} {colno} {formula}  
+
+ - Set formula Format  
+ FF {rowno} {colno} {formula}  {format}
